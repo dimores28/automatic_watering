@@ -1,0 +1,57 @@
+.offer {
+  display: flex;
+  justify-content: center;
+  background-image: url(./img/);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+
+    margin: 120px 0 200px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+  }
+
+  &__content-logo {
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0 70px;
+  }
+
+  &__logo {
+    width: 150px;
+  }
+
+  &__content-heading {
+    font-family: PTSansNarrow;
+    font-weight: 700;
+    font-size: 40px;
+    max-width: 450px;
+    width: 100%;
+    margin: 0 0 30px;
+  }
+
+  &__content-body {
+    font-family: PTSansNarrow;
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  &__content-btn {
+    margin: 40px 0 0;
+  }
+
+  &__img {
+    max-width: 700px;
+  }
+}

@@ -1,7 +1,9 @@
 <header class="header">
    <div class="header__container">
       <div class="header__logo logo">
-         <img src="@img" alt="logo" />
+         <a href="#">
+            <img src="@img/logo.jpg" alt="logo" width="140" height="60" />
+         </a>
       </div>
 
       <div class="header__menu menu">
@@ -11,16 +13,19 @@
          <nav class="menu__body">
             <ul class="menu__list">
                <li class="menu__item">
-                  <a href="#" class="menu__link">О нас</a>
+                  <a
+                     href="#"
+                     data-goto-header
+                     data-goto="#about"
+                     class="menu__link"
+                     >О нас</a
+                  >
                </li>
                <li class="menu__item">
                   <a href="#" class="menu__link">Услуги</a>
                </li>
                <li class="menu__item">
                   <a href="#" class="menu__link">Как мы работаем</a>
-               </li>
-               <li class="menu__item">
-                  <a href="#" class="menu__link">Преимущества</a>
                </li>
                <li class="menu__item">
                   <a href="#" class="menu__link">Портфолио</a>
@@ -33,9 +38,9 @@
       </div>
 
       <div class="header__actions">
-         <div class="header__language language">
-            <a href="#" class="language__linck _active">RU</a
-            ><a href="#" class="language__linck">MD</a>
+         <div class="header__language language" aria-label="language switcher">
+            <a href="#" class="language__linck _active" aria-label="language ru">RU</a
+            ><a href="#" class="language__linck" aria-label="language md">MD</a>
          </div>
 
          <a href="tel:060462696" class="header__tel">

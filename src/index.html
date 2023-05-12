@@ -1,56 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-   @@include('html/_head.htm',{ "title":"HomePage" })
-   <body>
-      <div class="wrapper">
-         @@include('html/_header.htm',{})
-         <main class="page">
-            <section class="offer">
-               <div class="offer__container">
-                  <h1 class="offer__heading">CИСТЕМЫ АВТОМАТИЧЕСКОГО ПОЛИВА "ПОД КЛЮЧ"</h1>
-               </div>
-            </section>
-
-            <div class="trust-triggers">
-               <div class="trust-triggers__container"></div>
+  @@include('html/_head.htm',{ "title":"HomePage" })
+  <body>
+    <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page">
+        <section class="offer">
+          <div class="offer__container">
+            <div class="offer__content">
+              <div class="offer__content-logo">
+                <img class="offer__logo" src="img/offer_logo.svg" alt="" />
+              </div>
+              <h1 class="offer__content-heading">
+                CИСТЕМЫ АВТОМАТИЧЕСКОГО ПОЛИВА "ПОД КЛЮЧ" КИШИНЕВ И ОБЛАСТЬ
+              </h1>
+              <p class="offer__content-body">
+                Качественная установка на долгие годы!!!
+              </p>
+              <div class="offer__content-btn">
+                <button class="btn">Заказать звонок</button>
+              </div>
             </div>
+            <img class="offer__img" src="img/home.png" alt="" />
+          </div>
+        </section>
 
-            <section class="about">
-               <div class="about__container">
-                  <h2 class="about__heading section-heading"></h2>
-               </div>
-            </section>
-
-            <section class="work-scheme">
-               <div class="work-scheme__container">
-                  <h2 class="work-scheme__heading section-heading"></h2>
-               </div>
-            </section>
-
-            <section class="services">
-               <div class="services__container">
-                  <h2 class="services__heading section-heading"></h2>
-               </div>
-            </section>
-
-            <section class="advantages">
-               <div class="advantages__container">
-                  <h2 class="advantages__heading section-heading"></h2>
-               </div>
-            </section>
-
-            <section class="order-forms">
-               <div class="order-forms__container">
-                  <h2 class="order-forms__heading section-heading"></h2>
-               </div>
-            </section>
-
-            <div class="map">
-               
+        <div class="trust-triggers">
+          <div class="trust-triggers__container">
+            <div class="trust-triggers__item">
+              <img
+                class="trust-triggers__item-img"
+                src="img/safety-shield.png"
+                alt=""
+              />
+              <p class="trust-triggers__item-body">
+                Гарантия оборудования 5 лет
+              </p>
             </div>
-         </main>
-         @@include('html/_footer.htm',{})
-      </div>
-      @@include('html/_js.htm',{})
-   </body>
+            <div class="trust-triggers__item">
+              <img
+                class="trust-triggers__item-img"
+                src="img/quality-award3.png"
+                alt=""
+              />
+              <p class="trust-triggers__item-body">
+                Опыт работы на рынке более 9 лет
+              </p>
+            </div>
+            <div class="trust-triggers__item">
+              <img
+                class="trust-triggers__item-img"
+                src="img/thumb-up.png"
+                alt=""
+              />
+              <p class="trust-triggers__item-body">
+                Большое количество положительных отзывов
+              </p>
+            </div>
+            <div class="trust-triggers__item">
+              <img
+                class="trust-triggers__item-img"
+                src="img/testing.png"
+                alt=""
+              />
+              <p class="trust-triggers__item-body">Профессиональный подход</p>
+            </div>
+            <div class="trust-triggers__item">
+              <img
+                class="trust-triggers__item-img"
+                src="img/money.png"
+                alt=""
+              />
+              <p class="trust-triggers__item-body">
+                Комфортное ценообразование
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <section class="about" id="about" data-watch="navigator">
+          <div class="about__container">
+            <h2 class="about__heading section-heading"></h2>
+          </div>
+        </section>
+
+        <section class="work-scheme">
+          <div class="work-scheme__container">
+            <h2 class="work-scheme__heading section-heading">
+              СХЕМА РАБОТЫ С НАМИ
+            </h2>
+            <div class="work-scheme__content">
+              <div class="work-scheme__item">
+                <svg class="work-scheme__item-img">
+                  <use xlink:href="@img/icons/icons.svg#communication"></use>
+                </svg>
+                <h3 class="work-scheme__item-title">Обращение к нам</h3>
+                <p class="work-scheme__item-body">
+                  Оставляете заявку на сайте или по телефону.
+                </p>
+              </div>
+              <div class="work-scheme__item">
+                <svg class="work-scheme__item-img">
+                  <use xlink:href="@img/icons/icons.svg#collection_info"></use>
+                </svg>
+                <h3 class="work-scheme__item-title">Сбор информации</h3>
+                <p class="work-scheme__item-body">
+                  Быстрый выезд специалиста на участок, создание КП.
+                </p>
+              </div>
+              <div class="work-scheme__item">
+                <svg class="work-scheme__item-img">
+                  <use xlink:href="@img/icons/icons.svg#design"></use>
+                </svg>
+                <h3 class="work-scheme__item-title">Проект автополива</h3>
+                <p class="work-scheme__item-body">
+                  Разработка проектной документации.
+                </p>
+              </div>
+              <div class="work-scheme__item">
+                <svg class="work-scheme__item-img">
+                  <use xlink:href="@img/icons/icons.svg#tools"></use>
+                </svg>
+                <h3 class="work-scheme__item-title">Монтажные работы</h3>
+                <p class="work-scheme__item-body">
+                  Проводим установку систем автополива.
+                </p>
+              </div>
+              <div class="work-scheme__item">
+                <svg class="work-scheme__item-img">
+                  <use xlink:href="@img/icons/icons.svg#service"></use>
+                </svg>
+                <h3 class="work-scheme__item-title">ООбслуживание</h3>
+                <p class="work-scheme__item-body">
+                  Гарантийное и сервисное обслуживание.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="services">
+          <div class="services__container">
+            <h2 class="services__heading section-heading"></h2>
+          </div>
+        </section>
+
+        <section class="advantages">
+          <div class="advantages__container">
+            <h2 class="advantages__heading section-heading"></h2>
+          </div>
+        </section>
+
+        <section class="order-forms">
+          <div class="order-forms__container">
+            <h2 class="order-forms__heading section-heading"></h2>
+          </div>
+        </section>
+
+        <div class="map"></div>
+
+        <div class="request-call">
+          <div class="request-call__body">
+            <p class="request-call__text">
+              Пожалуйста, заполните приведенную ниже форму и мы с вами свяжемся
+              в ближайшее время.
+            </p>
+            <form class="request-call__form">
+              <div class="request-call__form-group">
+                <label for="userName" class="request-call__label">Имя:</label>
+                <input
+                  type="text"
+                  class="request-call__input input"
+                  id="userName"
+                />
+              </div>
+
+              <div class="request-call__form-group">
+                <label
+                  for="phone"
+                  class="request-call__label request-call__label_required"
+                  >Телефон:</label
+                >
+                <input
+                  type="text"
+                  class="request-call__input input"
+                  id="phone"
+                  required
+                />
+              </div>
+              <button type="submit" class="btn btn-form">Отправить</button>
+            </form>
+          </div>
+
+          <div class="request-call__button">
+            <button type="button" aria-label="Request a call">
+              <span class="open">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+                  />
+                </svg>
+              </span>
+              <span class="close">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zm9.261 1.135a.5.5 0 0 1 .708 0L13 2.793l1.146-1.147a.5.5 0 0 1 .708.708L13.707 3.5l1.147 1.146a.5.5 0 0 1-.708.708L13 4.207l-1.146 1.147a.5.5 0 0 1-.708-.708L12.293 3.5l-1.147-1.146a.5.5 0 0 1 0-.708z"
+                  />
+                </svg>
+              </span>
+            </button>
+          </div>
+        </div>
+      </main>
+      @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_js.htm',{})
+  </body>
 </html>
