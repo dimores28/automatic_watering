@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  @@include('html/_head.htm',{ "title":"HomePage" })
+  @@include('html/_head.htm',{ "title":"Garden Industry" })
   <body>
     <div class="wrapper">
       @@include('html/_header.htm',{})
@@ -8,20 +8,18 @@
         <section class="offer">
           <div class="offer__container">
             <div class="offer__content">
-              <div class="offer__content-logo">
-                <img class="offer__logo" src="img/offer_logo.svg" alt="" />
-              </div>
-              <h1 class="offer__content-heading">
-                CИСТЕМЫ АВТОМАТИЧЕСКОГО ПОЛИВА "ПОД КЛЮЧ" КИШИНЕВ И ОБЛАСТЬ
+              <h1 class="offer__content-heading heading">
+                CИСТЕМЫ АВТОМАТИЧЕСКОГО ПОЛИВА "ПОД КЛЮЧ" КИШИНЕВ И ПО ВСЕЙ
+                МОЛДОВЕ
               </h1>
               <p class="offer__content-body">
                 Качественная установка на долгие годы!!!
               </p>
               <div class="offer__content-btn">
-                <button class="btn">Заказать звонок</button>
+                <button class="btn offer__btn">Заказать звонок</button>
               </div>
             </div>
-            <img class="offer__img" src="img/home.png" alt="" />
+            <!-- <img class="offer__img" src="img/home.png" alt="" /> -->
           </div>
         </section>
 
@@ -80,14 +78,57 @@
 
         <section class="about" id="about" data-watch="navigator">
           <div class="about__container">
-            <h2 class="about__heading section-heading"></h2>
+            <h2 class="about__heading section-heading">О НАС</h2>
+            <div class="about__content">
+              <p class="about__content-body">
+                GARDEN INDUSTRY – это больше, чем ландшафтный дизайн. Мы строим
+                качественные отношения, основанные на доверии. Более 9 лет
+                специалисты компании претворяют мечты клиентов в жизнь. Наша
+                компания обеспечивает тонкий баланс красоты и функциональности
+                проектов любой сложности. Ландшафтное проектирование, посадка
+                растений, укладка рулонного газона, ландшафтное освещение,
+                мощение тротуарной плитки, обслуживание и уход – и это еще не
+                весь список того, что мы можем сделать. Сотрудничество со
+                многими производителями материалов и растений позволяет нам
+                держать цены на доступном для вас уровне. Не медлите и свяжитесь
+                с нами, а мы сделаем то, что вы ожидаете от нас.
+              </p>
+              <img
+                class="about__content-img"
+                src="img/bg_offer_mobile.jpg"
+                alt=""
+              />
+            </div>
           </div>
         </section>
 
-        <section class="work-scheme">
+        <section class="gallery" id="gallery" data-watch="navigator">
+          <div class="gallery__container">
+            <h2 class="gallery__heading section-heading">НАШИ РАБОТЫ</h2>
+            <div class="gallery__content" data-gallery>
+              <a class="gallery__item" href="img/gazon.jpeg">
+                <img class="gallery__item-img" src="img/gazon.jpeg" />
+              </a>
+              <a class="gallery__item" href="img/gazon.jpeg">
+                <img class="gallery__item-img" src="img/gazon.jpeg" />
+              </a>
+              <a class="gallery__item" href="img/gazon.jpeg">
+                <img class="gallery__item-img" src="img/gazon.jpeg" />
+              </a>
+              <a class="gallery__item" href="img/gazon.jpeg">
+                <img class="gallery__item-img" src="img/gazon.jpeg" />
+              </a>
+              <a class="gallery__item" href="img/gazon.jpeg">
+                <img class="gallery__item-img" src="img/gazon.jpeg" />
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="work-scheme" id="work-scheme" data-watch="navigator">
           <div class="work-scheme__container">
             <h2 class="work-scheme__heading section-heading">
-              СХЕМА РАБОТЫ С НАМИ
+              СХЕМА РАБОТЫ С <span>НАМИ</span>
             </h2>
             <div class="work-scheme__content">
               <div class="work-scheme__item">
@@ -139,9 +180,130 @@
           </div>
         </section>
 
-        <section class="services">
+        <section class="services" id="services" data-watch="navigator">
           <div class="services__container">
-            <h2 class="services__heading section-heading"></h2>
+            <h2 class="services__heading section-heading">
+              Наши <span>услуги</span>
+            </h2>
+
+            <div class="services__row">
+              <article class="services__item">
+                <div class="services__img">
+                  <img
+                    src="@img/services/1.jpg"
+                    width="250"
+                    height="350"
+                    alt="Автоматический полив под ключ"
+                  />
+                </div>
+                <h3 class="services__title">Автоматический полив под ключ</h3>
+                <ul class="services__list">
+                  <li class="services__list-item">Монтаж от 1 дня;</li>
+                  <li class="services__list-item">Гарантия 2 года;</li>
+                  <li class="services__list-item">
+                    Профессиональное проектирование
+                  </li>
+                </ul>
+              </article>
+
+              <article class="services__item">
+                <div class="services__img">
+                  <img
+                    src="@img/services/2.jpg"
+                    width="250"
+                    height="350"
+                    alt="Автоматический полив под ключ"
+                  />
+                </div>
+                <h3 class="services__title">Ландшафтный дизайн</h3>
+                <ul class="services__list">
+                  <li class="services__list-item">
+                    Настройка контроллера и форсунок;
+                  </li>
+                  <li class="services__list-item">Устранение утечек;</li>
+                  <li class="services__list-item">Ремонт насосной станции;</li>
+                  <li class="services__list-item">Консервация за зиму</li>
+                </ul>
+              </article>
+
+              <article class="services__item">
+                <div class="services__img">
+                  <img
+                    src="@img/services/3.jpg"
+                    width="250"
+                    height="350"
+                    alt="Укладка газона"
+                  />
+                </div>
+                <h3 class="services__title">Укладка газона</h3>
+                <ul class="services__list">
+                  <li class="services__list-item">Газон прямо с поля;</li>
+                  <li class="services__list-item">
+                    Правильная подготовка с песчаной подушкой;
+                  </li>
+                  <li class="services__list-item">Укладка за 1 день</li>
+                </ul>
+              </article>
+
+              <article class="services__item">
+                <div class="services__img">
+                  <img
+                    src="@img/services/4.jpg"
+                    width="250"
+                    height="350"
+                    alt="Автоматический полив под ключ"
+                  />
+                </div>
+                <h3 class="services__title">Посадка растений и деревьев</h3>
+                <ul class="services__list">
+                  <li class="services__list-item">
+                    Замена устаревших комплектующих;
+                  </li>
+                  <li class="services__list-item">
+                    Установка WiFi пультов (управление со смартфона);
+                  </li>
+                  <li class="services__list-item">Добавление зон полива</li>
+                </ul>
+              </article>
+
+              <article class="services__item">
+                <div class="services__img">
+                  <img
+                    src="@img/services/1.jpg"
+                    width="250"
+                    height="350"
+                    alt="Автоматический полив под ключ"
+                  />
+                </div>
+                <h3 class="services__title">Ландшафтное освещение</h3>
+                <ul class="services__list">
+                  <li class="services__list-item">Монтаж от 1 дня;</li>
+                  <li class="services__list-item">Гарантия 2 года;</li>
+                  <li class="services__list-item">
+                    Профессиональное проектирование
+                  </li>
+                </ul>
+              </article>
+
+              <article class="services__item">
+                <div class="services__img">
+                  <img
+                    src="@img/services/2.jpg"
+                    width="250"
+                    height="350"
+                    alt="Автоматический полив под ключ"
+                  />
+                </div>
+                <h3 class="services__title">Мощение тротуарной плитки</h3>
+                <ul class="services__list">
+                  <li class="services__list-item">Газон прямо с поля;</li>
+                  <li class="services__list-item">
+                    Правильная подготовка с песчаной подушкой;
+                  </li>
+                  <li class="services__list-item">Укладка за 1 день</li>
+                </ul>
+              </article>
+            </div>
           </div>
         </section>
 
@@ -151,13 +313,188 @@
           </div>
         </section>
 
-        <section class="order-forms">
-          <div class="order-forms__container">
-            <h2 class="order-forms__heading section-heading"></h2>
+        <section class="faq">
+          <div class="faq__container">
+            <h2 class="faq__heading section-heading">
+              Частые вопросы наших <span>клиентов</span>
+            </h2>
+
+            <div data-spollers data-one-spoller class="spollers">
+              <details class="spollers__item">
+                <summary data-spoller-close class="spollers__title">
+                  Сколько стоит система автоматического полива?
+                </summary>
+                <div class="spollers__body">
+                  <p>
+                    Самый точный и правильный способ определения цены автополива
+                    — выезд нашего специалиста на замеры, для составления
+                    план-схемы и сметы с учетом всех ваших пожеланий.
+                  </p>
+
+                  <p>Тем более это абсолютно БЕСПЛАТНО в пределах Одессы.</p>
+
+                  <p>
+                    Если вы хотите узнать приблизительную цену до выезда
+                    специалиста, можем обсудить все детали по телефону. От вас
+                    потребуется фото участка и замеры орошаемой территории.
+                  </p>
+                </div>
+              </details>
+
+              <details class="spollers__item">
+                <summary data-spoller-close class="spollers__title">
+                  Какое обслуживание необходимо для системы?
+                </summary>
+                <div class="spollers__body">
+                  <p>
+                    Система полива достаточно надежна и, как правило, хватает
+                    двух визитов специалистов по сервисному обслуживанию в год.
+                    Осенняя консервация (продувка) на зимний период и весеннее
+                    тестирование с запуском.
+                  </p>
+
+                  <p>
+                    <strong
+                      >Мы можем научить Вас делать это самостоятельно!</strong
+                    >
+                  </p>
+                </div>
+              </details>
+
+              <details class="spollers__item">
+                <summary data-spoller-close class="spollers__title">
+                  У меня уже есть газон. Что будет с ним при монтаже системы?
+                </summary>
+                <div class="spollers__body">
+                  <p>
+                    С этим мы часто сталкиваемся. На самом деле проблем нет,
+                    если делать всё аккуратно.
+                  </p>
+
+                  <p>
+                    Газон аккуратно вырезается специальными ножами и кладётся на
+                    полиэтилен. После монтажа всё принимает первоначальный вид.
+                    Делается всё «день в день».
+                  </p>
+
+                  <p>Швы полностью зарастают в течение 1-2х недель.</p>
+                </div>
+              </details>
+
+              <details class="spollers__item">
+                <summary data-spoller-close class="spollers__title">
+                  Рулонный газон или сеяный, какой выбрать?
+                </summary>
+                <div class="spollers__body">
+                  <p>
+                    Тут мнения расходятся. И у одного, и другого есть как
+                    достоинства, так и недостатки. Давайте разбираться.
+                  </p>
+
+                  <p>
+                    Рулонный газон — это выбор тех, кто не хочет ждать. Кому
+                    надоел сорняк на участке и хочется зеленый сад уже сейчас. С
+                    правильным подходом работу по устройству рулонного газона
+                    можно выполнить даже за 2 дня.
+                  </p>
+
+                  <p>
+                    Также из плюсов хочется отметить, что рулонный газон выращен
+                    на поле по специальным технологиям. И прежде чем попасть на
+                    ваш участок, за ним ухаживают, подкармливают, косят,
+                    проводят аэрацию и скарификацию в течение 2х лет. Корневая
+                    система формируется крепкой, устойчивой к стрессам и
+                    болезням.
+                  </p>
+
+                  <p>
+                    Цена рулонного газона под ключ зависит от сложности участка.
+                    Но в среднем — от 160грн/м2
+                  </p>
+
+                  <p>
+                    Сеяный газон дешевле. Средняя стоимость под ключ — от
+                    80грн/м2.
+                  </p>
+
+                  <p>
+                    В отличии от рулонного, сеяный — для тех, кто готов
+                    подождать. Всходит сеяный газон только через неделю. Требует
+                    к себе постоянного внимания и бережного отношения. На раннем
+                    этапе появляются проплешины, которые нужно подсевать.
+                  </p>
+
+                  <p>
+                    Самым главным в устройстве сеяного газона является
+                    подготовка грунта. Если плохо протравить сорняк, он снова
+                    заполонит ваш участок.
+                  </p>
+
+                  <p>
+                    Также не каждая система полива подойдет для сеяного газона.
+                    К примеру, роторные дождеватели орошают участок одной
+                    струёй, которая способна размыть семена.
+                  </p>
+
+                  <p>
+                    Наши специалисты имеют опыт в устройстве как рулонного, так
+                    и сеяного газона. Поэтому, если у вас есть вопросы, смело
+                    обращайтесь к нам!
+                  </p>
+                </div>
+              </details>
+
+              <details class="spollers__item">
+                <summary data-spoller-close class="spollers__title">
+                  Можно купить только газон? Поливать буду самостоятельно?
+                </summary>
+                <div class="spollers__body">
+                  <p>
+                    Рулонный газон можно устанавливать и без системы полива, но
+                    только на ваш страх и риск.
+                  </p>
+
+                  <p>
+                    Добиться идеального изумрудного газона в нашем засушливом
+                    регионе без автоматического полива очень сложно. Поливать
+                    его нужно 1-2 раза в день. Теневые участки поливаются реже.
+                    К тому же, человеческий фактор никто не отменял. Если
+                    захотите уехать в отпуск на неделю, без полива газон может
+                    сгореть за 3-4 дня.
+                  </p>
+
+                  <p>
+                    Также, ни один поставщик газона не даст гарантию даже на 1
+                    день без системы полива.
+                  </p>
+
+                  <p>
+                    Не бросайте деньги на ветер! Даже самая бюджетная система
+                    автополива избавит вас от головной боли.
+                  </p>
+
+                  <p>
+                    Мы знаем, как сэкономить ваши деньги на автополиве. Звоните,
+                    мы подскажем!
+                  </p>
+                </div>
+              </details>
+
+              <details class="spollers__item">
+                <summary data-spoller-close class="spollers__title">
+                  А если пойдет дождь?
+                </summary>
+                <div class="spollers__body">
+                  <p>
+                    Существуют погодные датчики, которые останавливают работу
+                    системы во время дождя. Мы рекомендуем их устанавливать на
+                    каждом объекте.
+                  </p>
+                </div>
+              </details>
+            </div>
           </div>
         </section>
-
-        <div class="map"></div>
 
         <div class="request-call">
           <div class="request-call__body">
@@ -165,7 +502,7 @@
               Пожалуйста, заполните приведенную ниже форму и мы с вами свяжемся
               в ближайшее время.
             </p>
-            <form class="request-call__form">
+            <form class="request-call__form" id="request-call">
               <div class="request-call__form-group">
                 <label for="userName" class="request-call__label">Имя:</label>
                 <input
@@ -182,10 +519,13 @@
                   >Телефон:</label
                 >
                 <input
-                  type="text"
+                  type="tel"
                   class="request-call__input input"
                   id="phone"
-                  required
+                  required="required"
+                  aria-required="true"
+                  pattern="[0-9()#&+*-=.]+"
+                  title="Тоько цыфри и символы телефона (#, -, *, і т.д.) принимаются."
                 />
               </div>
               <button type="submit" class="btn btn-form">Отправить</button>

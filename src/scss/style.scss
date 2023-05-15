@@ -82,7 +82,7 @@ body {
   overflow: hidden;
   max-width: 1920px;
   margin: 0 auto;
-  
+
   @supports (overflow: clip) {
     overflow: clip;
   }
@@ -166,7 +166,13 @@ body {
 // Підключення стилів окремих сторінок
 @import "home";
 
+@import "heading";
+
 @import "offer";
 @import "trust-triggers";
+@import "about";
+@import "gallery";
 @import "work-scheme";
 @import "button";
+@import "services";
+@import "faq";

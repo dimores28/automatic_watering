@@ -49,6 +49,10 @@
         border: 1px solid #fff;
         border-radius: 8px;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+        &._sending {
+            opacity: 0.7;
+        }
     }
 
     &__form-group {
@@ -147,6 +151,10 @@
     &:focus-visible,
     &:active {
         box-shadow: rgba(38, 86, 148, 0.16) 0px 1px 4px, rgb(38, 86, 148) 0px 0px 0px 3px;
+    }
+
+    &._notvalid {
+        box-shadow: rgba(175, 0, 0, 0.16) 0px 1px 4px, rgb(175, 0, 0,) 0px 0px 0px 3px;
     }
 }
 

@@ -1,23 +1,19 @@
 .work-scheme {
-  margin: 0 0 60px;
+  margin: 0 0 80px;
 
   &__container {
     display: flex;
     flex-direction: column;
-    overflow: hidden;
   }
 
   &__heading {
-    font-family: PTSansNarrow;
-    font-weight: 700;
-    font-size: 32px;
     text-align: center;
-    margin: 0 0 50px;
+    margin: 0 0 70px;
   }
 
   &__content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
     grid-gap: 30px;
     margin: 0 0 50px;
   }
@@ -28,25 +24,74 @@
     flex-direction: column;
     border: 2px solid #f6f6f6;
     padding: 10px;
+    transition: all 0.3s ease-in;
+    @media (any-hover: hover) {
+      &:hover {
+        border-color: #1aa29e;
+        transform: scale(1.1);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        & svg {
+          transition: all 0.3s ease-in;
+          fill: #1aa29e;
+        }
+      }
+    }
   }
 
   &__item-img {
     max-width: 80px;
-    margin: 0 0 30px;
+    margin: 0 0 10px;
     fill: #656872;
   }
 
   &__item-title {
-    font-family: PTSansNarrow;
+    font-family: PTSansNarrow, sans-serif;
     text-align: center;
     font-size: 18px;
     text-transform: uppercase;
     margin: 0 0 20px;
   }
   &__item-body {
-    font-family: PTSansNarrow;
+    font-family: PTSansNarrow, sans-serif;
     text-align: center;
     font-size: 14px;
     margin: 0 0 30px;
+  }
+}
+
+@media (max-width: $tablet) {
+  .work-scheme {
+    &__item {
+      border: 2px solid #1aa29e;
+      padding: 10px;
+    }
+
+    &__item-img {
+      fill: #1aa29e;
+      max-width: 80px;
+      height: 110px;
+      margin: 0 0 20px;
+    }
+  }
+}
+
+@media (max-width: $mobileSmall) {
+  .work-scheme {
+    &__heading {
+      margin: 0 0 50px;
+    }
+
+    &__content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin: 0 0 50px;
+    }
+
+    &__item {
+      width: 100%;
+      max-width: 250px;
+    }
   }
 }

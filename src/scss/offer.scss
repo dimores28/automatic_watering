@@ -1,7 +1,7 @@
 .offer {
   display: flex;
   justify-content: center;
-  background-image: url(./img/);
+  background-image: url(./img/m_modern.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -9,49 +9,84 @@
   &__container {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
-    justify-content: space-between;
 
-    margin: 120px 0 200px;
+    margin: 120px 0;
   }
 
   &__content {
     display: flex;
     flex-direction: column;
-    width: 450px;
-  }
 
-  &__content-logo {
-    justify-content: center;
-    align-items: center;
-    margin: 50px 0 70px;
-  }
-
-  &__logo {
-    width: 150px;
+    width: 600px;
   }
 
   &__content-heading {
-    font-family: PTSansNarrow;
-    font-weight: 700;
-    font-size: 40px;
-    max-width: 450px;
+    max-width: 600px;
     width: 100%;
-    margin: 0 0 30px;
+    margin: 200px 0 20px;
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
   }
 
   &__content-body {
     font-family: PTSansNarrow;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+    margin: 0 0 40px;
   }
 
   &__content-btn {
-    margin: 40px 0 0;
   }
 
   &__img {
     max-width: 700px;
+  }
+}
+@media (max-width: $tablet) {
+  .offer {
+    &__container {
+      margin: 100px 0 200px;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      width: 450px;
+      margin: 0 0 0 50px;
+    }
+
+    &__content-heading {
+      margin: 120px 0 30px;
+    }
+  }
+}
+@media (max-width: $mobile) {
+  .offer {
+    &__container {
+      justify-content: center;
+      margin: 100px 0 200px;
+    }
+
+    &__content {
+      align-items: center;
+      margin: 0 0;
+    }
+
+    &__content-heading {
+      text-align: center;
+      margin: 90px 0 30px;
+      max-width: 350px;
+    }
+
+    &__content-body {
+      text-align: center;
+      max-width: 230px;
+    }
   }
 }
