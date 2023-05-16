@@ -9,13 +9,15 @@ document
     document.querySelector(".request-call")?.classList.toggle("_show");
   });
 
-  document.querySelector('.request-call')?.addEventListener('click', function(e){
+document
+  .querySelector(".request-call")
+  ?.addEventListener("click", function (e) {
     e.stopPropagation();
   });
 
-  document.querySelector('body').addEventListener('click', function(){
-    document.querySelector(".request-call")?.classList.remove("_show");
-  });
+document.querySelector("body").addEventListener("click", function () {
+  document.querySelector(".request-call")?.classList.remove("_show");
+});
 
 function isValidPhone(p) {
   var phoneRe = /^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$/g;
@@ -113,10 +115,24 @@ footerForm?.addEventListener("submit", async function (e) {
   }
 });
 
-
-
 //Scroll animation
 // ScrollReveal().reveal('.faq', { delay: 500 });
-ScrollReveal().reveal('.about__content-body', { delay: 450, distance: '100%', duration: 600, origin: 'left' });
-ScrollReveal().reveal('.about__content-img', { delay: 450, distance: '100%', duration: 600, origin: 'right' });
-ScrollReveal().reveal('.spollers__item', { delay: 400, distance: '60px', duration: 500, interval: 100, origin: 'bottom' });
+ScrollReveal().reveal(".about__content-body", {
+  delay: 450,
+  distance: "100%",
+  duration: 600,
+  origin: "left",
+});
+ScrollReveal().reveal(".about__content-video", {
+  delay: 450,
+  distance: "100%",
+  duration: 600,
+  origin: "right",
+});
+ScrollReveal().reveal(".spollers__item", {
+  delay: 400,
+  distance: "60px",
+  duration: 500,
+  interval: 100,
+  origin: "bottom",
+});

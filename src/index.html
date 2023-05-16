@@ -6,6 +6,8 @@
       @@include('html/_header.htm',{})
       <main class="page">
         <section class="offer">
+          <img src="@img/m_modern.jpg" alt="background image"  class="offer__bg"/>
+
           <div class="offer__container">
             <div class="offer__content">
               <h1 class="offer__content-heading heading">
@@ -19,7 +21,6 @@
                 <button class="btn offer__btn">Заказать звонок</button>
               </div>
             </div>
-            <!-- <img class="offer__img" src="img/home.png" alt="" /> -->
           </div>
         </section>
 
@@ -78,49 +79,163 @@
 
         <section class="about" id="about" data-watch="navigator">
           <div class="about__container">
-            <h2 class="about__heading section-heading">О НАС</h2>
+            <h2 class="about__heading section-heading">О <span>НАС</span></h2>
             <div class="about__content">
-              <p class="about__content-body">
-                GARDEN INDUSTRY – это больше, чем ландшафтный дизайн. Мы строим
-                качественные отношения, основанные на доверии. Более 9 лет
-                специалисты компании претворяют мечты клиентов в жизнь. Наша
-                компания обеспечивает тонкий баланс красоты и функциональности
-                проектов любой сложности. Ландшафтное проектирование, посадка
-                растений, укладка рулонного газона, ландшафтное освещение,
-                мощение тротуарной плитки, обслуживание и уход – и это еще не
-                весь список того, что мы можем сделать. Сотрудничество со
-                многими производителями материалов и растений позволяет нам
-                держать цены на доступном для вас уровне. Не медлите и свяжитесь
-                с нами, а мы сделаем то, что вы ожидаете от нас.
-              </p>
-              <img
-                class="about__content-img"
-                src="img/bg_offer_mobile.jpg"
-                alt=""
-              />
+              <div class="about__content-body">
+                <p>
+                  GARDEN INDUSTRY – это больше, чем ландшафтный дизайн. Мы
+                  строим качественные отношения, основанные на доверии. Более 9
+                  лет специалисты компании претворяют мечты клиентов в жизнь.
+                  Наша компания обеспечивает тонкий баланс красоты и
+                  функциональности проектов любой сложности. Ландшафтное
+                  проектирование, посадка растений, укладка рулонного газона,
+                  ландшафтное освещение, мощение тротуарной плитки, обслуживание
+                  и уход – и это еще не весь список того, что мы можем сделать.
+                  Сотрудничество со многими производителями материалов и
+                  растений позволяет нам держать цены на доступном для вас
+                  уровне. Не медлите и свяжитесь с нами, а мы сделаем то, что вы
+                  ожидаете от нас.
+                </p>
+              </div>
+
+              <div class="about__content-video">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/IIVITJzDDC4"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </div>
             </div>
           </div>
         </section>
 
-        <section class="gallery" id="gallery" data-watch="navigator">
-          <div class="gallery__container">
-            <h2 class="gallery__heading section-heading">НАШИ РАБОТЫ</h2>
-            <div class="gallery__content" data-gallery>
-              <a class="gallery__item" href="img/gazon.jpeg">
-                <img class="gallery__item-img" src="img/gazon.jpeg" />
-              </a>
-              <a class="gallery__item" href="img/gazon.jpeg">
-                <img class="gallery__item-img" src="img/gazon.jpeg" />
-              </a>
-              <a class="gallery__item" href="img/gazon.jpeg">
-                <img class="gallery__item-img" src="img/gazon.jpeg" />
-              </a>
-              <a class="gallery__item" href="img/gazon.jpeg">
-                <img class="gallery__item-img" src="img/gazon.jpeg" />
-              </a>
-              <a class="gallery__item" href="img/gazon.jpeg">
-                <img class="gallery__item-img" src="img/gazon.jpeg" />
-              </a>
+        <section class="services" id="services" data-watch="navigator">
+          <div class="services__container">
+            <h2 class="services__heading section-heading">
+              Наши <span>услуги</span>
+            </h2>
+
+            <div class="services__row">
+              <article class="services__item">
+                <div class="services__img">
+                  <img
+                    src="@img/services/watering.jpg"
+                    width="250"
+                    height="350"
+                    alt="Автоматический полив под ключ"
+                  />
+                </div>
+                <h3 class="services__title">Автоматический полив под ключ</h3>
+                <ul class="services__list">
+                  <li class="services__list-item">Монтаж от 1 дня;</li>
+                  <li class="services__list-item">Гарантия 2 года;</li>
+                  <li class="services__list-item">
+                    Профессиональное проектирование
+                  </li>
+                </ul>
+              </article>
+
+              <article class="services__item">
+                <div class="services__img">
+                  <img
+                    src="@img/services/design.jpg"
+                    width="250"
+                    height="350"
+                    alt="Автоматический полив под ключ"
+                  />
+                </div>
+                <h3 class="services__title">Ландшафтный дизайн</h3>
+                <ul class="services__list">
+                  <li class="services__list-item">
+                    Настройка контроллера и форсунок;
+                  </li>
+                  <li class="services__list-item">Устранение утечек;</li>
+                  <li class="services__list-item">Ремонт насосной станции;</li>
+                  <li class="services__list-item">Консервация за зиму</li>
+                </ul>
+              </article>
+
+              <article class="services__item">
+                <div class="services__img">
+                  <img
+                    src="@img/services/lawn_laying.jpg"
+                    width="250"
+                    height="350"
+                    alt="Укладка газона"
+                  />
+                </div>
+                <h3 class="services__title">Укладка газона</h3>
+                <ul class="services__list">
+                  <li class="services__list-item">Газон прямо с поля;</li>
+                  <li class="services__list-item">
+                    Правильная подготовка с песчаной подушкой;
+                  </li>
+                  <li class="services__list-item">Укладка за 1 день</li>
+                </ul>
+              </article>
+
+              <article class="services__item">
+                <div class="services__img">
+                  <img
+                    src="@img/services/plants.jpg"
+                    width="250"
+                    height="350"
+                    alt="Автоматический полив под ключ"
+                  />
+                </div>
+                <h3 class="services__title">Посадка растений и деревьев</h3>
+                <ul class="services__list">
+                  <li class="services__list-item">
+                    Замена устаревших комплектующих;
+                  </li>
+                  <li class="services__list-item">
+                    Установка WiFi пультов (управление со смартфона);
+                  </li>
+                  <li class="services__list-item">Добавление зон полива</li>
+                </ul>
+              </article>
+
+              <article class="services__item">
+                <div class="services__img">
+                  <img
+                    src="@img/services/light.JPG"
+                    width="250"
+                    height="350"
+                    alt="Автоматический полив под ключ"
+                  />
+                </div>
+                <h3 class="services__title">Ландшафтное освещение</h3>
+                <ul class="services__list">
+                  <li class="services__list-item">Монтаж от 1 дня;</li>
+                  <li class="services__list-item">Гарантия 2 года;</li>
+                  <li class="services__list-item">
+                    Профессиональное проектирование
+                  </li>
+                </ul>
+              </article>
+
+              <article class="services__item">
+                <div class="services__img">
+                  <img
+                    src="@img/services/tile.jpg"
+                    width="250"
+                    height="350"
+                    alt="Автоматический полив под ключ"
+                  />
+                </div>
+                <h3 class="services__title">Мощение тротуарной плитки</h3>
+                <ul class="services__list">
+                  <li class="services__list-item">Газон прямо с поля;</li>
+                  <li class="services__list-item">
+                    Правильная подготовка с песчаной подушкой;
+                  </li>
+                  <li class="services__list-item">Укладка за 1 день</li>
+                </ul>
+              </article>
             </div>
           </div>
         </section>
@@ -180,136 +295,216 @@
           </div>
         </section>
 
-        <section class="services" id="services" data-watch="navigator">
-          <div class="services__container">
-            <h2 class="services__heading section-heading">
-              Наши <span>услуги</span>
+        <section class="gallery" id="gallery" data-watch="navigator">
+          <div class="gallery__container">
+            <h2 class="gallery__heading section-heading">
+              НАШИ <span>РАБОТЫ</span>
             </h2>
-
-            <div class="services__row">
-              <article class="services__item">
-                <div class="services__img">
-                  <img
-                    src="@img/services/1.jpg"
-                    width="250"
-                    height="350"
-                    alt="Автоматический полив под ключ"
-                  />
-                </div>
-                <h3 class="services__title">Автоматический полив под ключ</h3>
-                <ul class="services__list">
-                  <li class="services__list-item">Монтаж от 1 дня;</li>
-                  <li class="services__list-item">Гарантия 2 года;</li>
-                  <li class="services__list-item">
-                    Профессиональное проектирование
-                  </li>
-                </ul>
-              </article>
-
-              <article class="services__item">
-                <div class="services__img">
-                  <img
-                    src="@img/services/2.jpg"
-                    width="250"
-                    height="350"
-                    alt="Автоматический полив под ключ"
-                  />
-                </div>
-                <h3 class="services__title">Ландшафтный дизайн</h3>
-                <ul class="services__list">
-                  <li class="services__list-item">
-                    Настройка контроллера и форсунок;
-                  </li>
-                  <li class="services__list-item">Устранение утечек;</li>
-                  <li class="services__list-item">Ремонт насосной станции;</li>
-                  <li class="services__list-item">Консервация за зиму</li>
-                </ul>
-              </article>
-
-              <article class="services__item">
-                <div class="services__img">
-                  <img
-                    src="@img/services/3.jpg"
-                    width="250"
-                    height="350"
-                    alt="Укладка газона"
-                  />
-                </div>
-                <h3 class="services__title">Укладка газона</h3>
-                <ul class="services__list">
-                  <li class="services__list-item">Газон прямо с поля;</li>
-                  <li class="services__list-item">
-                    Правильная подготовка с песчаной подушкой;
-                  </li>
-                  <li class="services__list-item">Укладка за 1 день</li>
-                </ul>
-              </article>
-
-              <article class="services__item">
-                <div class="services__img">
-                  <img
-                    src="@img/services/4.jpg"
-                    width="250"
-                    height="350"
-                    alt="Автоматический полив под ключ"
-                  />
-                </div>
-                <h3 class="services__title">Посадка растений и деревьев</h3>
-                <ul class="services__list">
-                  <li class="services__list-item">
-                    Замена устаревших комплектующих;
-                  </li>
-                  <li class="services__list-item">
-                    Установка WiFi пультов (управление со смартфона);
-                  </li>
-                  <li class="services__list-item">Добавление зон полива</li>
-                </ul>
-              </article>
-
-              <article class="services__item">
-                <div class="services__img">
-                  <img
-                    src="@img/services/1.jpg"
-                    width="250"
-                    height="350"
-                    alt="Автоматический полив под ключ"
-                  />
-                </div>
-                <h3 class="services__title">Ландшафтное освещение</h3>
-                <ul class="services__list">
-                  <li class="services__list-item">Монтаж от 1 дня;</li>
-                  <li class="services__list-item">Гарантия 2 года;</li>
-                  <li class="services__list-item">
-                    Профессиональное проектирование
-                  </li>
-                </ul>
-              </article>
-
-              <article class="services__item">
-                <div class="services__img">
-                  <img
-                    src="@img/services/2.jpg"
-                    width="250"
-                    height="350"
-                    alt="Автоматический полив под ключ"
-                  />
-                </div>
-                <h3 class="services__title">Мощение тротуарной плитки</h3>
-                <ul class="services__list">
-                  <li class="services__list-item">Газон прямо с поля;</li>
-                  <li class="services__list-item">
-                    Правильная подготовка с песчаной подушкой;
-                  </li>
-                  <li class="services__list-item">Укладка за 1 день</li>
-                </ul>
-              </article>
+            <div class="gallery__content" data-gallery>
+              <a class="gallery__item item-m" href="img/gallery/IMG_0300.PNG">
+                <img class="gallery__item-img" src="img/gallery/IMG_0300.PNG" />
+              </a>
+              <a
+                class="gallery__item item-s modile-d-n"
+                href="img/gallery/IMG_0236.JPG"
+              >
+                <img class="gallery__item-img" src="img/gallery/IMG_0236.JPG" />
+              </a>
+              <a class="gallery__item item-s" href="img/gallery/IMG_0483.jpg">
+                <img class="gallery__item-img" src="img/gallery/IMG_0483.jpg" />
+              </a>
+              <a class="gallery__item item-m" href="img/gallery/IMG_0484.jpg">
+                <img class="gallery__item-img" src="img/gallery/IMG_0484.jpg" />
+              </a>
+              <a class="gallery__item item-l" href="img/gallery/IMG_0690.jpg">
+                <img class="gallery__item-img" src="img/gallery/IMG_0690.jpg" />
+              </a>
+              <a
+                class="gallery__item item-l modile-d-n"
+                href="img/gallery/IMG_1152.jpg"
+              >
+                <img class="gallery__item-img" src="img/gallery/IMG_1152.jpg" />
+              </a>
+              <a
+                class="gallery__item item-s modile-d-n"
+                href="img/gallery/IMG_1229.PNG"
+              >
+                <img class="gallery__item-img" src="img/gallery/IMG_2091.PNG" />
+              </a>
+              <a
+                class="gallery__item item-s modile-d-n"
+                href="img/gallery/IMG_2091.PNG"
+              >
+                <img class="gallery__item-img" src="img/gallery/IMG_1250.PNG" />
+              </a>
+              <a class="gallery__item item-m" href="img/gallery/IMG_1663.jpg">
+                <img class="gallery__item-img" src="img/gallery/IMG_1663.jpg" />
+              </a>
+              <a
+                class="gallery__item item-s modile-d-n"
+                href="img/gallery/IMG_1933.PNG"
+              >
+                <img class="gallery__item-img" src="img/gallery/IMG_1933.PNG" />
+              </a>
+              <a class="gallery__item item-m" href="img/gallery/IMG_2089.PNG">
+                <img class="gallery__item-img" src="img/gallery/IMG_2089.PNG" />
+              </a>
             </div>
           </div>
         </section>
 
         <section class="advantages">
           <div class="advantages__container">
-            <h2 class="advantages__heading section-heading"></h2>
+            <h2 class="advantages__heading section-heading">
+              Почему <span>мы ?</span>
+            </h2>
+
+            <div class="advantages__body">
+              <div class="advantages__block">
+                <div class="advantages__numbering advantages__numbering_1">
+                  <div class="advantages__number">1</div>
+                </div>
+
+                <div class="advantages__text-block">
+                  <h3 class="advantages__heding">Комплексный подход</h3>
+                  <p class="advantages__text">
+                    У нас Вы можете заказать весь комплекс услуг по
+                    благоустройству: от проектирования, озеленения и высадки
+                    растений до укладки плитки и сада.
+                  </p>
+                </div>
+              </div>
+
+              <div class="advantages__block">
+                <div class="advantages__numbering advantages__numbering_2">
+                  <div class="advantages__number">2</div>
+                </div>
+
+                <div class="advantages__text-block">
+                  <h3 class="advantages__heding">
+                    Установка автополива в кратчайшие сроки
+                  </h3>
+                  <p class="advantages__text">
+                    У нас представлений широкий вибір тротуарної плитки на
+                    будь-який смак. Ми-виробники плитки, тому наші ціни нижчі за
+                    ринкові
+                  </p>
+                </div>
+              </div>
+
+              <div class="advantages__block">
+                <div class="advantages__numbering advantages__numbering_3">
+                  <div class="advantages__number">3</div>
+                </div>
+
+                <div class="advantages__text-block">
+                  <h3 class="advantages__heding">
+                    Мы работает 7 дней в неделю
+                  </h3>
+                  <p class="advantages__text">
+                    У нас представлений широкий вибір тротуарної плитки на
+                    будь-який смак. Ми-виробники плитки, тому наші ціни нижчі за
+                    ринкові
+                  </p>
+                </div>
+              </div>
+
+              <div class="advantages__block">
+                <div class="advantages__numbering advantages__numbering_4">
+                  <div class="advantages__number">4</div>
+                </div>
+
+                <div class="advantages__text-block">
+                  <h3 class="advantages__heding">
+                    В нашей команде профессионалы своего дела
+                  </h3>
+                  <p class="advantages__text">
+                    Наши специалисты с многолетним опытом выполняют все работы
+                    качественно и в оговоренные сроки.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="advantages__partners partners">
+              <h3 class="partners__title">Наши партнеры</h3>
+              <div class="partners__body">
+                <div class="partners__img">
+                  <img src="@img/advantages/gardena.png" alt="gardena" />
+                </div>
+                <div class="partners__img">
+                  <img src="@img/advantages/hunter.png" alt="hunter" />
+                </div>
+                <div class="partners__img">
+                  <img src="@img/advantages/rain.png" alt="rain bird" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="stock">
+          <div class="stock__container">
+            <div class="stock__content">
+              <h2 class="stock__heading section-heading">АКЦИЯ!!!</h2>
+              <p class="stock__content-text">
+                Только в июне первые 5 заказчиков получат Wi-Fi контроллер
+                Hunter HYDRAWISE СОВЕРШЕННО БЕСПЛАТНО!
+              </p>
+              <img class="stock__content-img" src="img/stock.png" alt="" />
+            </div>
+
+            <form action="" class="stock__form" id="stockForm">
+              <label class="stock__form-labele" for="stockForm"
+                >Отправить заявку:</label
+              >
+              <div class="stock__form-group">
+                <label class="form-group__labele" for="stockUserName"
+                  >Имя:</label
+                >
+                <input
+                  type="text"
+                  class="input stock__input"
+                  id="stockUserName"
+                  name="stockUserName"
+                  placeholder="Имя:"
+                />
+              </div>
+
+              <div class="stock__form-group">
+                <label class="form-group__labele" for="stockEmail"
+                  >Почта:</label
+                >
+                <input
+                  type="email"
+                  class="input stock__input"
+                  id="stockEmail"
+                  placeholder="example@mail.com"
+                  required="required"
+                  aria-required="true"
+                  name="stockEmail"
+                />
+              </div>
+              <div class="stock__form-group">
+                <label class="form-group__labele" for="stockPhone"
+                  >Телефон:</label
+                >
+                <input
+                  type="tel"
+                  class="input stock__input"
+                  id="stockPhone"
+                  placeholder="+3730xxxxx"
+                  required="required"
+                  aria-required="true"
+                  pattern="[0-9()#&+*-=.]+"
+                  name="stockPhone"
+                  title="Тоько цыфри и символы телефона (#, -, *, і т.д.) принимаются."
+                />
+              </div>
+              <button type="submit" class="btn btn-form stock__submit">
+                Отправить
+              </button>
+            </form>
           </div>
         </section>
 

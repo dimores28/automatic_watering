@@ -17,22 +17,22 @@ import lightGallery from "lightgallery";
 import lgThumbnail from "lightgallery/plugins/thumbnail/lg-thumbnail.min.js";
 import lgZoom from "lightgallery/plugins/zoom/lg-zoom.min.js";
 import lgVideo from "lightgallery/plugins/video/lg-video.min.js";
-import lgAutoplay from "lightgallery/plugins/autoplay/lg-autoplay.min.js";
+// import lgAutoplay from "lightgallery/plugins/autoplay/lg-autoplay.min.js";
 
 // Базові стилі
 import "@scss/libs/gallery/lightgallery.scss";
 // Стилі доповнень
 import "@scss/libs/gallery/lg-thumbnail.scss";
 import "@scss/libs/gallery/lg-video.scss";
-import "@scss/libs/gallery/lg-autoplay.scss";
+// import "@scss/libs/gallery/lg-autoplay.scss";
 import "@scss/libs/gallery/lg-zoom.scss";
-import "@scss/libs/gallery/lg-pager.scss";
+// import "@scss/libs/gallery/lg-pager.scss";
 import "@scss/libs/gallery/lg-fullscreen.scss";
-import "@scss/libs/gallery/lg-share.scss";
-import "@scss/libs/gallery/lg-comments.scss";
-import "@scss/libs/gallery/lg-rotate.scss";
-import "@scss/libs/gallery/lg-medium-zoom.scss";
-import "@scss/libs/gallery/lg-relative-caption.scss";
+// import "@scss/libs/gallery/lg-share.scss";
+// import "@scss/libs/gallery/lg-comments.scss";
+// import "@scss/libs/gallery/lg-rotate.scss";
+// import "@scss/libs/gallery/lg-medium-zoom.scss";
+// import "@scss/libs/gallery/lg-relative-caption.scss";
 
 // Усі стилі
 import "@scss/libs/gallery/lightgallery-bundle.scss";
