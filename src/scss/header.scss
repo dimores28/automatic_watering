@@ -1,58 +1,57 @@
 //====================================================================================================
 .header {
-	padding: 18px 0px 18px 0px;
-	background: linear-gradient(270deg, rgb(26, 162, 158) 28%, #2b3990 71%);
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	z-index: 100;
+  padding: 18px 0px 18px 0px;
+  background: #28263c;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
 
-	color: #fff;
-	font-family: Roboto, sans-serif;
-	font-weight: 400;
-	font-style: normal;
-	font-size: rem(20);
+  color: #fff;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: rem(20);
 
-	// .header__container
-	&__container {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
+  // .header__container
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-	}
+  // .header__logo
+  &__logo {
+    a {
+      padding: 4px;
+      border-radius: 4px;
+      outline: none;
+      transition: all 0.3s ease-in;
+      display: block;
+      width: 180px;
 
-	// .header__logo
-	&__logo {
+      &:focus-visible,
+      &:active {
+        box-shadow: rgba(255, 255, 255, 0.16) 0px 1px 4px,
+          rgb(255, 255, 255) 0px 0px 0px 3px;
+      }
 
-		a {
-			padding: 4px;
-			border-radius: 4px;
-			outline: none;
-			transition: all 0.3s ease-in;
-			display: block;
-			width: 180px;
-			
-			&:focus-visible,
-			&:active {
-				box-shadow: rgba(255, 255, 255, 0.16) 0px 1px 4px, rgb(255, 255, 255) 0px 0px 0px 3px;
-			}
+      img {
+        width: 100%;
+        height: auto;
+      }
 
-			img {
-				width: 100%;
-				height: auto;
-			}
+      @media (max-width: 720px) {
+        overflow: hidden;
+        width: 56px;
 
-			@media (max-width: 720px){
-				overflow: hidden;
-				width: 56px;
-				
-				img {
-					width: 180px;
-				}
-			}
-		}
-	}
+        img {
+          width: 180px;
+        }
+      }
+    }
+  }
 
   &__actions {
     display: flex;
@@ -60,191 +59,197 @@
     gap: 16px;
   }
 
-	&__actions {
-		display: flex;
-		align-items: center;
-		gap: 16px;
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
 
-		@media (max-width: 1080px) {
-			margin-left: auto;
-			margin-right: 20px;
-		}
-	}
+    @media (max-width: 1080px) {
+      margin-left: auto;
+      margin-right: 20px;
+    }
+  }
 
- 	// .header__tel
-	 &__tel {
-		display: flex;
-		align-items: center;
-		padding: 4px;
-		border-radius: 4px;
-		outline: none;
-		transition: all 0.3s ease-in;
-		
+  // .header__tel
+  &__tel {
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    border-radius: 4px;
+    outline: none;
+    transition: all 0.3s ease-in;
 
-		&:focus-visible,
-		&:active {
-			box-shadow: rgba(255, 255, 255, 0.16) 0px 1px 4px, rgb(255, 255, 255) 0px 0px 0px 3px;
-		}
+    &:focus-visible,
+    &:active {
+      box-shadow: rgba(255, 255, 255, 0.16) 0px 1px 4px,
+        rgb(255, 255, 255) 0px 0px 0px 3px;
+    }
 
-		span {
-			position: relative;
+    span {
+      position: relative;
 
-			&::before {
-				content: '';
-				position: absolute;
-				left: 0;
-				bottom: -2px;
-				height: 2px;
-				width: 0%;
-				background-color: #fff;
-				transition: all 0.3s ease-in;
-			}
-		}
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        height: 2px;
+        width: 0%;
+        background-color: #fff;
+        transition: all 0.3s ease-in;
+      }
+    }
 
-		@media (max-width:$mobileSmall){
-			 span {
-				display: none;
-			 } 
-		}
+    @media (max-width: $mobileSmall) {
+      span {
+        display: none;
+      }
+    }
 
-		
+    svg {
+      fill: #fff;
+      height: 22px;
+      width: 22px;
+      margin-right: 4px;
+    }
 
-		svg {
-			fill: #fff;
-			height: 22px;
-			width: 22px;
-			margin-right: 4px;
-		}
-
-		@media (any-hover: hover){
-			&:hover {
-				& span::before {
-					width: 100%;
-				}
-			}
-		}
-	}
-
-
+    @media (any-hover: hover) {
+      &:hover {
+        & span::before {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
 
 .menu {
+  @media (max-width: 1080px) {
+    order: 1;
+  }
 
-	@media (max-width: 1080px) {
-		order: 1;
-	}
+  // .menu__icon
+  &__icon {
+  }
 
-	// .menu__icon
-	&__icon {
-	}
+  // .menu__body
+  &__body {
+    @media (max-width: 1080px) {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      top: 86px;
+      left: 0;
+      background: linear-gradient(270deg, rgb(26, 162, 158) 28%, #2b3990 71%);
+      z-index: 101;
+      padding: 40px 16px;
+      transform: translateX(-100%);
+      transition: all 0.4s ease-in;
+      overflow-x: auto;
 
-	// .menu__body
-	&__body {
-		@media (max-width: 1080px) {
-			position: fixed;
-			width: 100%;
-			height: 100vh;
-			top: 86px;
-			left: 0;
-			background: linear-gradient(270deg, rgb(26, 162, 158) 28%, #2b3990 71%);
-			z-index: 101;
-			padding: 40px 16px;
-			transform: translateX(-100%);
-			transition: all 0.4s ease-in;
-			overflow-x: auto;
+      .menu-open & {
+        transform: translateX(0);
+      }
+    }
+  }
 
-			.menu-open &{
-				transform: translateX(0);
-			}
-		}
-	}
+  // .menu__list
+  &__list {
+    display: flex;
+    gap: 16px;
 
-	// .menu__list
-	&__list {
-		display: flex;
-		gap: 16px;
+    @media (max-width: 1080px) {
+      flex-direction: column;
+      gap: 24px;
+    }
+  }
 
-		@media (max-width: 1080px) {
-			flex-direction: column;
-			gap: 24px;
-		}
-	}
+  // .menu__item
+  &__item {
+    text-align: center;
 
-	// .menu__item
-	&__item {
-		text-align: center;
+    @media (max-width: 1080px) {
+      text-align: center;
+      font-size: rem(22);
+    }
+  }
 
-		@media (max-width: 1080px) {
-			text-align: center;
-			font-size: rem(22);
-		}
-	}
+  // .menu__link
+  &__link {
+    position: relative;
+    padding: 4px;
+    border-radius: 4px;
+    outline: none;
+    transition: all 0.3s ease-in;
 
-	// .menu__link
-	&__link {
-		position: relative;
-		padding: 4px;
-		border-radius: 4px;
-		outline: none;
-		transition: all 0.3s ease-in;
-		
-		&::before {
-			content: '';
-			position: absolute;
-			left: 0;
-			bottom: -2px;
-			height: 2px;
-			width: 0%;
-			background-color: #fff;
-			transition: all 0.3s ease-in;
-		}
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      height: 2px;
+      width: 0%;
+      background-color: #fff;
+      transition: all 0.3s ease-in;
+    }
 
-		@media (any-hover: hover){
-			&:hover {
-				&::before {
-					width: 100%;
-				}
-			}
-		}
+    @media (any-hover: hover) {
+      &:hover {
+        &::before {
+          width: 100%;
+        }
+      }
+    }
 
-		@media (max-width: 1080px) {
-			display: block;
-		}
+    @media (max-width: 1080px) {
+      display: block;
+    }
 
-		
-		&:focus-visible,
-		&:active {
-			box-shadow: rgba(255, 255, 255, 0.16) 0px 1px 4px, rgb(255, 255, 255) 0px 0px 0px 3px;
-		}
-	}
+    &:focus-visible,
+    &:active {
+      box-shadow: rgba(255, 255, 255, 0.16) 0px 1px 4px,
+        rgb(255, 255, 255) 0px 0px 0px 3px;
+    }
+  }
 }
 
 ._navigator-active.menu__link::before {
-	width: 100%;
+  width: 100%;
+}
+@media (min-width: 1079px) {
+  ._navigator-active.menu__link::before {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1080px) {
+  ._navigator-active.menu__link {
+    color: #ff6500;
+  }
 }
 
 .language {
+  // .language__linck
+  &__linck {
+    padding: 0px 8px;
+    margin: 0;
+    outline: none;
+    transition: all 0.3s ease-in;
 
-	// .language__linck
-	&__linck {
-		padding: 0px 8px;
-		margin: 0;
-		outline: none;
-		transition: all 0.3s ease-in;
+    &:first-child {
+      border-right: 3px solid #fff;
+    }
 
-		&:first-child {
-			border-right: 3px solid #fff;
-		}
-		
-		&:focus-visible,
-		&:active {
-			box-shadow: rgba(255, 255, 255, 0.16) 0px 1px 4px, rgb(255, 255, 255) 0px 0px 0px 3px;
-			border-radius: 4px;
-		}
-	}
-    &__linck._active {
-		opacity: 0.7;
-	}
+    &:focus-visible,
+    &:active {
+      box-shadow: rgba(255, 255, 255, 0.16) 0px 1px 4px,
+        rgb(255, 255, 255) 0px 0px 0px 3px;
+      border-radius: 4px;
+    }
+  }
+  &__linck._active {
+    opacity: 0.7;
+  }
 }
 
 //====================================================================================================

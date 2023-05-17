@@ -1,5 +1,6 @@
 .work-scheme {
-  margin: 0 0 80px;
+  background-color: #d8c3a4;
+  padding: 0 0 80px;
 
   &__container {
     display: flex;
@@ -8,7 +9,7 @@
 
   &__heading {
     text-align: center;
-    margin: 0 0 70px;
+    margin: 70px 0;
   }
 
   &__content {
@@ -22,20 +23,8 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    border: 2px solid #f6f6f6;
+    border: 2px solid #656872;
     padding: 10px;
-    transition: all 0.3s ease-in;
-    @media (any-hover: hover) {
-      &:hover {
-        border-color: #1aa29e;
-        transform: scale(1.1);
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        & svg {
-          transition: all 0.3s ease-in;
-          fill: #1aa29e;
-        }
-      }
-    }
   }
 
   &__item-img {
@@ -77,10 +66,6 @@
 
 @media (max-width: $mobileSmall) {
   .work-scheme {
-    &__heading {
-      margin: 0 0 50px;
-    }
-
     &__content {
       display: flex;
       align-items: center;

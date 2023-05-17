@@ -1,4 +1,5 @@
 .about {
+  background-color: #c3c4bf;
   padding: 0 0 80px;
   &__container {
     display: flex;
@@ -38,7 +39,6 @@
 
 @media (max-width: $tablet) {
   .about {
-    margin: 0 0 80px;
     &__container {
     }
     &__heading {
