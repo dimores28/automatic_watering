@@ -1,0 +1,30 @@
+.trust-triggers {
+  background-color: #e0e0e0;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    grid-gap: 30px;
+    align-items: center;
+    padding: 80px 0;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__item-img {
+    width: 80px;
+    margin: 0 0 30px;
+  }
+  &__item-body {
+    font-family: PTSansNarrow, sans-serif;
+    text-align: center;
+    max-width: 200px;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 26px;
+  }
+}

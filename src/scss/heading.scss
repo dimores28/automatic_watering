@@ -1,0 +1,21 @@
+.heading {
+  font-family: PTSansNarrow, sans-serif;
+  font-weight: 700;
+  text-shadow: 1px 1px 1px #000;
+  @include adaptiveValue("font-size", 48, 28);
+  @include adaptiveValue("line-height", 60, 36);
+}
+
+.section-heading {
+  font-family: PTSansNarrow, sans-serif;
+  font-weight: 700;
+  @include adaptiveValue("font-size", 36, 28);
+  line-height: 108%;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+
+  span {
+    color:rgb(26, 162, 158);
+  }
+}

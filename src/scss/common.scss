@@ -1,1 +1,248 @@
 // Заголовки, загальні БЕМ блоки та інше...
+//Request a call====================================================================================================
+.request-call {
+    position: fixed;
+    right: 30px;
+    bottom: 40px;
+    z-index: 102;
+    color: #fff;
+
+    @media (max-width:$mobileSmall){
+         right: 15px; 
+         bottom: 30px;
+         max-width: 280px;
+    }
+
+
+    // .request-call__body
+    &__body {
+        background: rgb(26, 162, 158);
+        margin-bottom: 0px;
+        border-radius: 8px;
+        transition: all 0.6s ease-in;
+
+        max-height: 0px;
+        padding: 0;
+        opacity: 0;
+        overflow: hidden;
+    }
+
+    &__text {
+        max-width: 280px;
+        margin: 0 auto 24px auto;
+        font-family: PTSansNarrow, sans-serif;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 108%;
+        text-align: center;
+
+        @media (max-width:$mobileSmall){
+            font-size: 18px;   
+        }
+    }
+
+    // .request-call__form
+    &__form {
+        display: flex;
+        flex-direction: column;
+        padding: 12px 8px;
+        border: 1px solid #fff;
+        border-radius: 8px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+        &._sending {
+            opacity: 0.7;
+        }
+    }
+
+    &__form-group {
+        margin-bottom: 14px;
+    }
+
+    // .request-call__label
+    &__label {
+        margin-bottom: 4px;
+
+        &_required {
+            position: relative;
+
+            &::after {
+                content: '*';
+                position: absolute;
+                right: -10px;
+            }
+        }
+
+    }
+
+    // .request-call__input
+    &__input {
+        margin-top: 6px;
+    }
+
+    // .request-call__button
+    &__button {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background: #1aa29d63;
+        margin: 0 0 0 auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: calc(50% - 85px / 2);
+            left: calc(50% - 85px / 2);
+            width: 85px;
+            height: 85px;
+            border-radius: 50%;
+            background: #1aa29d3d;
+            animation: circles 3s linear infinite;
+        }
+
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            background: #1aa29e;
+            
+        }
+
+        svg {
+            fill: #fff;
+            width: 26px;
+            height: 26px;
+        }
+
+    }
+
+    .close {
+        display: none;
+        pointer-events: all;
+    }
+
+    .open {
+        animation: shiver 3s ease-in infinite;
+    }
+}
+
+.input {
+    width: 100%;
+    border-radius: 6px;
+    padding: 6px 12px;
+
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+	font-style: normal;
+    font-size: 18px;
+    line-height: 108%;
+    transition: all 0.3s ease-in;
+    outline: none;
+
+    &:focus-visible,
+    &:active {
+        box-shadow: rgba(38, 86, 148, 0.16) 0px 1px 4px, rgb(38, 86, 148) 0px 0px 0px 3px;
+    }
+
+    &._notvalid {
+        box-shadow: rgba(175, 0, 0, 0.16) 0px 1px 4px, rgb(175, 0, 0,) 0px 0px 0px 3px;
+    }
+}
+
+
+._show {
+    & .open {
+        display: none;
+    }
+
+    & .close {
+        display: block;
+    }
+
+    .request-call__body {
+        max-height: 100%;
+        margin-bottom: 20px;
+        padding: 32px 14px 24px;
+        opacity: 1;
+    }
+}
+
+
+@keyframes circles{
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    60% {
+        opacity: 1;
+        transform: scale(0.9);
+    }
+
+    80% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0.7;
+        transform: scale(1.1);
+    }
+}
+
+@keyframes shiver {
+    0% {
+        transform: rotate(0);
+    }
+
+    65% {
+        transform: rotate(0);
+    }
+
+    70% {
+        transform: rotate(-15deg);
+    }
+
+    80% {
+        transform: rotate(15deg);
+    }
+
+    85% {
+        transform: rotate(-10deg);
+    }
+
+    90% {
+        transform: rotate(10deg);
+    }
+
+    92% {
+        transform: rotate(-5deg);
+    }
+
+    94% {
+        transform: rotate(5deg);
+    }
+
+    96% {
+        transform: rotate(-5deg);
+    }
+
+    98% {
+        transform: rotate(5deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+//====================================================================================================

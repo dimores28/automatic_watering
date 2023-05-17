@@ -1,0 +1,46 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2b3990;
+  color: #fff;
+  border: 2px solid #2b3990;
+  padding: 15px 40px;
+  border-radius: 100px;
+  text-transform: uppercase;
+  box-shadow: none;
+  transition: all 0.3s ease-in;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  outline: none;
+  &:focus-visible,
+  &:active {
+    box-shadow: rgba(255, 255, 255, 0.16) 0px 1px 4px,
+      rgb(255, 255, 255) 0px 0px 0px 3px;
+  }
+}
+
+.offer__btn {
+  border: 2px solid #ff6500;
+  background-color: #ff6500;
+  @include adaptiveValue("font-size", 20, 16);
+  @media (any-hover: hover) {
+    &:hover {
+      border-color: #fff;
+      background: rgba(0, 0, 0, 0);
+    }
+  }
+}
+
+.btn-form {
+  background: #2b3990;
+  padding: 10px 20px;
+  @include adaptiveValue("font-size", 18, 16);
+  @media (any-hover: hover) {
+    &:hover {
+      border-color: #2b3990;
+      background: #fff;
+      color: #2b3990;
+    }
+  }
+}
