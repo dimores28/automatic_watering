@@ -7,6 +7,7 @@
 }
 
 .section-heading {
+  color: #1aa29e;
   font-family: PTSansNarrow, sans-serif;
   font-weight: 700;
   @include adaptiveValue("font-size", 36, 28);
@@ -16,6 +17,6 @@
   text-transform: uppercase;
 
   span {
-    color:rgb(26, 162, 158);
+    color: #1aa29e;
   }
 }

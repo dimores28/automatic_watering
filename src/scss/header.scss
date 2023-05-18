@@ -1,7 +1,7 @@
 //====================================================================================================
 .header {
   padding: 18px 0px 18px 0px;
-  background: #28263c;
+  background: #98c66e;
   position: fixed;
   top: 0;
   left: 0;
@@ -140,7 +140,7 @@
       height: 100vh;
       top: 86px;
       left: 0;
-      background: linear-gradient(270deg, rgb(26, 162, 158) 28%, #2b3990 71%);
+      background: #4a632c;
       z-index: 101;
       padding: 40px 16px;
       transform: translateX(-100%);
@@ -203,6 +203,7 @@
 
     @media (max-width: 1080px) {
       display: block;
+      text-align: right;
     }
 
     &:focus-visible,

@@ -117,22 +117,66 @@ footerForm?.addEventListener("submit", async function (e) {
 
 //Scroll animation
 // ScrollReveal().reveal('.faq', { delay: 500 });
+
+ScrollReveal().reveal(".offer__content", {
+  delay: 400,
+  distance: "100%",
+  duration: 500,
+  origin: "top",
+});
+
 ScrollReveal().reveal(".about__content-body", {
   delay: 450,
   distance: "100%",
   duration: 600,
   origin: "left",
 });
+
 ScrollReveal().reveal(".about__content-video", {
   delay: 450,
   distance: "100%",
   duration: 600,
   origin: "right",
 });
+
+
+ScrollReveal().reveal(".services__item", {
+  delay: 450,
+  distance: "80px",
+  duration: 600,
+  interval: 100,
+  origin: "left",
+});
+
+
+
+ScrollReveal().reveal(".gallery__item", {
+  delay: 400,
+  distance: "80px",
+  duration: 600,
+  interval: 50,
+  origin: "right",
+});
+
 ScrollReveal().reveal(".spollers__item", {
+  delay: 400,
+  distance: "100%",
+  duration: 500,
+  interval: 100,
+  origin: "bottom",
+});
+
+ScrollReveal().reveal(".advantages__block", {
   delay: 400,
   distance: "60px",
   duration: 500,
   interval: 100,
   origin: "bottom",
+});
+
+ScrollReveal().reveal(".advantages__partners", {
+  delay: 400,
+  distance: "100%",
+  duration: 500,
+  origin: "left",
 });

@@ -3,73 +3,73 @@
 
 // Блок зі спойлерами
 .spollers {
-	display: grid;
-	gap: 15px;
+  display: grid;
+  gap: 15px;
 }
 // Спойлер
 .spollers__item {
-	font-size: rem(20);
-	font-family: PTSansNarrow, sans-serif;
-	font-weight: 400;
-	font-style: normal;
-	line-height: 108%;
+  font-size: rem(20);
+  font-family: PTSansNarrow, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 108%;
 
-	@media (max-width:$mobileSmall){
-		font-size: rem(16);
-	}
+  @media (max-width: $mobileSmall) {
+    font-size: rem(16);
+  }
 }
 // Заголовок спойлера
 .spollers__title {
-	width: 100%;
-	cursor: default;
-	text-align: left;
-	padding: rem(20) rem(44) rem(20) rem(30);
-	border-radius: rem(5);
-	position: relative;
-	list-style: none;
-	font-family: Roboto, sans-serif;
-	font-size: rem(22);
-	line-height: 110%;
-	font-weight: 400;
-	font-style: normal;
-	color: #fff;
-	background: rgb(26, 162, 158);
+  width: 100%;
+  cursor: default;
+  text-align: left;
+  padding: rem(20) rem(44) rem(20) rem(30);
+  border-radius: rem(5);
+  position: relative;
+  list-style: none;
+  font-family: Roboto, sans-serif;
+  font-size: rem(22);
+  line-height: 110%;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+  background: #ad9161;
 
-	@media (max-width:$mobileSmall){
-		padding: rem(20) rem(42) rem(20) rem(16); 
-		font-size: rem(18); 
-	}
+  @media (max-width: $mobileSmall) {
+    padding: rem(20) rem(42) rem(20) rem(16);
+    font-size: rem(18);
+  }
 
-	&::marker {
-	}
-	._spoller-init & {
-		cursor: pointer;
-		&::before,
-		&::after {
-			content: "";
-			position: absolute;
-			right: 10px;
-			top: 50%;
-			background-color: #FFF;
-			height: 2px;
-			width: 15px;
-			transition: transform 0.5s ease 0s;
-		}
-		&::before {
-			transform: translate(-75%, -50%) rotate(40deg);
-		}
-		&::after {
-			transform: translate(0, -50%) rotate(-40deg);
-		}
-		&._spoller-active {
-			&::before {
-				transform: translateX(-75%) rotate(-40deg);
-			}
-			&::after {
-				transform: rotate(40deg);
-			}
-		}
-		/*
+  &::marker {
+  }
+  ._spoller-init & {
+    cursor: pointer;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      background-color: #fff;
+      height: 2px;
+      width: 15px;
+      transition: transform 0.5s ease 0s;
+    }
+    &::before {
+      transform: translate(-75%, -50%) rotate(40deg);
+    }
+    &::after {
+      transform: translate(0, -50%) rotate(-40deg);
+    }
+    &._spoller-active {
+      &::before {
+        transform: translateX(-75%) rotate(-40deg);
+      }
+      &::after {
+        transform: rotate(40deg);
+      }
+    }
+    /*
 		._spoller-init & {
 			position: relative;
 			width: 100%;
@@ -102,19 +102,19 @@
 			}
 		}
 		*/
-	}
+  }
 }
 // Контент спойлера
 .spollers__body {
-	border-radius: rem(5);
-	border: 1px solid #eee;
-	padding: rem(20) rem(30);
+  border-radius: rem(5);
+  border: 1px solid #eee;
+  padding: rem(20) rem(30);
 
-	@media (max-width:$mobileSmall){
-		padding: rem(20) rem(16);  
-	}
+  @media (max-width: $mobileSmall) {
+    padding: rem(20) rem(16);
+  }
 
-	p {
-		margin-bottom: 16px;
-	}
+  p {
+    margin-bottom: 16px;
+  }
 }

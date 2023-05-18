@@ -1,197 +1,194 @@
 //====================================================================================================
 //background: #252525;     background: #2d2d2d;
 .footer {
-   background: #252525; 
-   color: #fff;
-   padding: 70px 0px 0px 0px;
+  background: #4a632c;
+  color: #fff;
+  padding: 70px 0px 0px 0px;
 
+  // .footer__container
+  &__container {
+  }
 
-   // .footer__container
-   &__container {
-      
-   }
+  &__heading {
+    font-family: PTSansNarrow, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: rem(32);
+    line-height: 108%;
+    margin-bottom: 34px;
 
-   &__heading {
-      font-family: PTSansNarrow, sans-serif;
-      font-weight: 700;
-	   font-style: normal;
-      font-size: rem(32);
-      line-height: 108%;
-      margin-bottom: 34px;
-
-      @media (max-width: em(1200)){
-           text-align: center;
-      }
-   }
-
-   // .footer__content
-   &__content {
-      display: flex;
-      align-items: start;
-      gap: 30px;
-
-      @media (max-width: em(1200)){
-           flex-wrap: wrap;
-      }
-   }
-
-   &__map {
-      flex: 1 1 33.333%;
-      max-height: 440px;
-
-      @media (max-width: em(1200)){
-         flex: 1 1 100%;
-      }
-
-      iframe {
-         width: 100%;
-         height: 440px;
-         border-radius: 4px;
-      }
-
-   }
-
-   // .footer__actions
-   &__actions {
-      flex: 1 1 33.333%;
-
-      @media (max-width: em(1200)){
-         flex: 1 1 calc(50% - 30px);
-      }
-
-      @media (max-width: 576px){
-         flex: 1 1 100%;
-      }
-   }
-
-   // .footer__form
-   &__form {
-      margin-top: 20px;
-      &._sending {
-         opacity: 0.7;
-      }
-   }
-
-   // .footer__form-group
-   &__form-group {
-      margin-top: -10px;
-      margin-bottom: 6px;
-
-      label {
-         font-size: 0px;
-         color: #252525;
-      }
-   }
-
-   // .footer__input
-   &__input {
-      font-size: 20px;
-      padding: 8px 14px;
-   }
-
-   &__textarea {
-      resize: none;
-      font-size: 20px;
-      padding: 8px 14px;
-      // margin-top: 8px;
-   }
-
-   // .footer__submit
-   &__submit {
-      margin-top: 20px;
-   }
-
-   // .footer__contacts
-   &__contacts {
-      flex: 1 1 33.333%;
-
-      @media (max-width: em(1200)){
-         flex: 1 1 calc(50% - 30px);
-      }
-
-      @media (max-width: 576px){
-         flex: 1 1 100%;
-      }
-
-      &_list {
-      }
-   }
-
-   // .footer__logo
-   &__logo {
-      margin-top: 24px;
-
-      img {
-         display: block;
-         margin: 0 auto;
-      }
-   }
-
-   // .footer__policy
-   &__policy {
-      background: #2d2d2d;
-      padding: 20px;
+    @media (max-width: em(1200)) {
       text-align: center;
-      color: #fff;
-      font-family: PTSansNarrow, sans-serif;
-      font-weight: 400;
-	   font-style: normal;
-      font-size: 22px;
-      line-height: 108%;
-   }
+    }
+  }
+
+  // .footer__content
+  &__content {
+    display: flex;
+    align-items: start;
+    gap: 30px;
+
+    @media (max-width: em(1200)) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__map {
+    flex: 1 1 33.333%;
+    max-height: 440px;
+
+    @media (max-width: em(1200)) {
+      flex: 1 1 100%;
+    }
+
+    iframe {
+      width: 100%;
+      height: 440px;
+      border-radius: 4px;
+    }
+  }
+
+  // .footer__actions
+  &__actions {
+    flex: 1 1 33.333%;
+
+    @media (max-width: em(1200)) {
+      flex: 1 1 calc(50% - 30px);
+    }
+
+    @media (max-width: 576px) {
+      flex: 1 1 100%;
+    }
+  }
+
+  // .footer__form
+  &__form {
+    margin-top: 20px;
+    &._sending {
+      opacity: 0.7;
+    }
+  }
+
+  // .footer__form-group
+  &__form-group {
+    margin-top: -10px;
+    margin-bottom: 6px;
+
+    label {
+      font-size: 0px;
+      color: #252525;
+    }
+  }
+
+  // .footer__input
+  &__input {
+    font-size: 20px;
+    padding: 8px 14px;
+  }
+
+  &__textarea {
+    resize: none;
+    font-size: 20px;
+    padding: 8px 14px;
+    // margin-top: 8px;
+  }
+
+  // .footer__submit
+  &__submit {
+    margin-top: 20px;
+  }
+
+  // .footer__contacts
+  &__contacts {
+    flex: 1 1 33.333%;
+
+    @media (max-width: em(1200)) {
+      flex: 1 1 calc(50% - 30px);
+    }
+
+    @media (max-width: 576px) {
+      flex: 1 1 100%;
+    }
+
+    &_list {
+    }
+  }
+
+  // .footer__logo
+  &__logo {
+    margin-top: 24px;
+
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  // .footer__policy
+  &__policy {
+    background: #3f5525;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    font-family: PTSansNarrow, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 108%;
+  }
 }
 
 .contacts {
-   padding-top: 64px;
+  padding-top: 64px;
 
-   @media (max-width: em(1200)){
-      padding-top: 20px; 
-   }
+  @media (max-width: em(1200)) {
+    padding-top: 20px;
+  }
 
-   // .contacts__item
-   &__item {
-      color: #fff;
-      font-family: PTSansNarrow, sans-serif;
-      font-weight: 400;
-	   font-style: normal;
-      font-size: 18px;
-      line-height: 108%;
+  // .contacts__item
+  &__item {
+    color: #fff;
+    font-family: PTSansNarrow, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 108%;
 
-      margin-bottom: 20px;
-   }
+    margin-bottom: 20px;
+  }
 
-   &__linck {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      padding: 4px;
-      border-radius: 4px;
-      outline: none;
-      transition: all 0.3s ease-in;
+  &__linck {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 4px;
+    border-radius: 4px;
+    outline: none;
+    transition: all 0.3s ease-in;
 
-      @media (any-hover: hover){
-			&:hover {
-				color: rgb(26, 162, 158);
+    @media (any-hover: hover) {
+      &:hover {
+        color: rgb(26, 162, 158);
 
-            svg {
-               fill: rgb(26, 162, 158);
-            }
-			}
-		}
-
-      &:focus-visible,
-      &:active {
-         box-shadow: rgba(255, 255, 255, 0.16) 0px 1px 4px, rgb(255, 255, 255) 0px 0px 0px 3px;
+        svg {
+          fill: rgb(26, 162, 158);
+        }
       }
-   }
+    }
 
-   &__icon {
-      fill: #fff;
-      width: 24px;
-      height: 24px;
-      transition: all 0.3s ease-in;
-   }
+    &:focus-visible,
+    &:active {
+      box-shadow: rgba(255, 255, 255, 0.16) 0px 1px 4px,
+        rgb(255, 255, 255) 0px 0px 0px 3px;
+    }
+  }
+
+  &__icon {
+    fill: #fff;
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s ease-in;
+  }
 }
-
 
 //====================================================================================================
