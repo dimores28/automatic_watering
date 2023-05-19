@@ -3,8 +3,8 @@
   justify-content: center;
   min-height: 100vh;
   position: relative;
-  
-  &__bg{
+
+  &__bg {
     position: absolute;
     top: 0;
     left: 0;
@@ -28,16 +28,18 @@
   &__content {
     display: flex;
     flex-direction: column;
+    margin: 100px 0 0 0;
 
-    width: 600px;
+    width: 800px;
   }
 
   &__content-heading {
-    max-width: 600px;
+    max-width: 800px;
     width: 100%;
     margin: 0px 0 20px;
     color: #fff;
     text-shadow: 2px 2px 2px #000;
+    word-spacing: 7px;
   }
 
   &__content-body {
@@ -51,7 +53,6 @@
   }
 
   &__btn {
-    
   }
 
   &__img {
@@ -97,4 +98,3 @@
     }
   }
 }
-

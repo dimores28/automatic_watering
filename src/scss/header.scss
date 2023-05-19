@@ -1,7 +1,11 @@
 //====================================================================================================
 .header {
   padding: 18px 0px 18px 0px;
-  background: #98c66e;
+  background: linear-gradient(
+    90deg,
+    rgba(43, 57, 144, 1) 35%,
+    rgba(26, 162, 158, 1) 100%
+  );
   position: fixed;
   top: 0;
   left: 0;
