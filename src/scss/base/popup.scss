@@ -50,7 +50,7 @@ body::after {
   visibility: hidden;
   transform: scale(0);
   transition: transform 0.3s ease 0s;
-  background-color: #eee;
+  background: #1aa29e;
   padding: 30px;
   width: 100%;
   max-width: 500px;
@@ -64,4 +64,8 @@ body::after {
   display: flex;
   width: 100%;
   justify-content: end;
+}
+
+.popup__input-btn {
+  margin-top: 16px;
 }

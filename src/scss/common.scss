@@ -49,9 +49,14 @@
         border: 1px solid #fff;
         border-radius: 8px;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        max-width: 300px;
 
         &._sending {
             opacity: 0.7;
+        }
+
+        p {
+            max-width: 290px;
         }
     }
 

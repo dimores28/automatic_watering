@@ -46,6 +46,8 @@
 
   &__content-img {
     max-width: 300px;
+    width: 100%;
+    height: auto;
   }
 
   &__form {
@@ -72,6 +74,10 @@
     }
   }
 
+  & p {
+    max-width: 340px;
+  }
+
   &__form-labele {
     font-size: 24px;
     color: #fff;
@@ -84,7 +90,10 @@
   }
 
   &__submit {
-    width: 60%;
+    margin-top: 20px;
+    width: 100%;
+    box-shadow: 0 0 0 10px rgb(43 57 144 / 50%);
+    animation: shadowPulse 1.5s infinite;
   }
 }
 .form-group__labele {
